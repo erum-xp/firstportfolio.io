@@ -1,0 +1,293 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(105, 102, 102);
+}
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+
+}
+nav{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 70px 0px 70px;
+}
+.portfolio{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+}
+ul li:hover{
+    background-color: orange;
+    padding: 20px ;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+}
+.portfolio:hover{
+    color: orange;
+    transition: all 1s ease;
+}
+.menu-bar{
+    display: none;
+}
+main{
+    height: 100vh;
+    width: 100%;
+
+    background-color: rgb(95, 97, 97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container1{
+    height: 500px;
+    width: 50%;
+    background-color: rgb(46, 48, 48);
+    box-shadow: 3px 5px 7px rgba(80, 78, 79, 0.1);
+}
+.div01{
+    /* background-color: yellowgreen; */
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-pic{
+    height: 400px;
+    width: 70%;
+    /* background-color: rgb(0, 0, 0); */
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+    background-image: url(/WhatsApp\ Image\ 2025-04-23\ at\ 23.01.49_1ba82c65.jpg);
+    background-position: top;
+    background-size: cover;
+
+}
+.div2{
+    height: 500px;
+    width: 90%;
+    /* background-color: yellowgreen; */
+    position: relative;
+    top: 50px;
+}
+.name{
+    /* position: relative;
+    top: 100px; */
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif Arial, Helvetica, sans-serif;
+}
+.div2 h5{
+    color: white;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.mail{
+    height: 30px;
+    width: 55%;
+    /* background-color: rgb(4, 5, 2); */
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+}
+.cal-num{
+    height: 30px;
+    width: 50%;
+    /* background-color: rgb(4, 5, 2); */
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+}
+.icons{
+    height: 50px;
+    width: 50%;
+    display: flex;
+    /* background-color: tomato; */
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: 30px;
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    align-items: center;
+}
+#div003{
+    /* margin-top: 10px; */
+    margin: 10px 10px;
+}
+.developer{
+    font-size: 15px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: rgb(240, 208, 208);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.circle:hover{
+    background-color: orange;
+    transition: all 0.5s ease ;
+    transform: scale(1.08);
+    color: black;
+}
+footer{
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fbox1{
+    color: white;
+}
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1699px) {
+            nav {
+                margin: 0px 50px;
+            }
+            ul li {
+                margin: 0 15px;
+            }
+        }
+
+        @media (max-width: 1599px) {
+            .portfolio {
+                font-size: 32px;
+            }
+            ul li a {
+                font-size: 18px;
+            }
+            ul li {
+                margin: 0 12px;
+            }
+            .developer{
+                font-size: 10px;
+                margin-top: 20px;
+                font-weight: bold;
+
+            }
+            .container1{
+                height: 500px;
+                width: 80%;
+            }
+        
+        }
+
+        @media (max-width: 1399px) {
+            nav {
+                margin: 0px 40px;
+            }
+            .portfolio {
+                font-size: 30px;
+            }
+            ul li a {
+                font-size: 16px;
+            }
+            ul li {
+                margin: 0 10px;
+            }
+            ul li:hover {
+                padding: 15px;
+            }
+        }
+@media (max-width: 800px){
+    nav{
+        margin: 0;
+    }
+    nav ul 
+    {
+        position: absolute;
+        top: 110px;
+        left: 0;
+        height: 90vh;
+        width: 100%;
+        background-color: orange;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -1700px;
+        transition: all 0.5s ease-out;
+
+
+    }
+    nav ul:hover{
+        background-color: rgb(22, 21, 21);
+        color: white;
+    }
+    nav ul li{
+        margin: 30px 0;
+    }
+    .menu-bar{
+        display: block;
+    }
+    .mobile-manu{
+        margin-top: 0px;
+        border-bottom-right-radius: 50%;
+    }
+
+    .cal-num{
+        height: 30px;
+        width: 100%;
+       
+    }
+}
+      
+
+        @media (max-width: 567px) {
+            nav {
+                margin: 0px 10px;
+            }
+            .portfolio {
+                font-size: 24px;
+            }
+            ul li a {
+                font-size: 14px;
+            }
+            ul li {
+                margin: 5px 5px;
+            }
+            ul li:hover {
+                padding: 8px;
+            }
+            .cal-num{
+                height: 30px;
+                width: 100%;
+              
+            }
+           
+            
+        }
+    
